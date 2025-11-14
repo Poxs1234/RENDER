@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: reneer-dotnet-app
+    env: docker
+    dockerfilePath: Dockerfile
+    branch: main
+    region: oregon
+    plan: free
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      # Si quieres fijar el nombre del dll, añade:
+      # - key: APP_DLL
+      #   value: MyProject.dll

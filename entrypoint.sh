@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-# Si APP_DLL está definido, usarlo; si no, detectar el primer .dll
 if [ -n "$APP_DLL" ]; then
   DLL="$APP_DLL"
 else

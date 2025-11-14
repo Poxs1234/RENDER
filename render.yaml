@@ -9,6 +9,5 @@ services:
     envVars:
       - key: ASPNETCORE_ENVIRONMENT
         value: Production
-      # Si quieres fijar el nombre del dll, añade:
-      # - key: APP_DLL
-      #   value: MyProject.dll
+      - key: APP_DLL
+        value: REENEER.dll
